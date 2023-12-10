@@ -1,0 +1,36 @@
+functional programming
+
+lambda biasa disebut anonymous function
+contoh
+var penjumlahan: (int)->int={
+value -> value + value
+}
+
+1. dalam lambda tidak perlu mendeklarasikan tipe spesifik untuk nilai kembaliannya. tipe tersebut akan ditentukan oleh compiler secara otomatis
+2. walaupun sebuah fungsi, lambda tidak membutuhkan keyword fun dan visibility modifier saat dideklarasikan, karena bersifta anonymous.
+3. parameter yg ditetapkan berada di dalam kurung kurawal{}
+4. ketika mengembalikan nilai, keyword return tidak diperlukan karena kompiler akan secara otomatis mengembalikan nilai dalam body
+5. lambda expression dapat digunakan sebagai argumen untuk sebuah parameter dan dapat disimpan ke dalam sebuah variabel.
+
+contoh lambda
+tombolAwesome.setOnClickListener{ view ->
+txt_user.text = ""
+}
+
+------------------------
+high-order function
+
+contoh:
+fun findHiddenGames(game: (String)->Unit){ game("Hai Teman")}
+
+------------------
+extensions
+contoh:
+fun perkenalan(){}
+-----------------------
+scope function
+-----------------------
+collection function
+------------
+Object-oriented programming(OOP)
+pada kotlin segalanya adalah objek
